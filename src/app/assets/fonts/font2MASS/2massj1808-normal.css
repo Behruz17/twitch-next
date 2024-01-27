@@ -1,0 +1,9 @@
+@font-face {
+	font-family: '2MASSJ1808-Normal';
+	src: url('../fonts/2massj1808-normal.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/2massj1808-normal.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/2massj1808-normal.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/2massj1808-normal.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/2massj1808-normal.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/2massj1808-normal.svg#2massj1808-normal') format('svg'); /* Chrome < 4, Legacy iOS */
+}

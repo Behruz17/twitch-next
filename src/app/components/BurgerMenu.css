@@ -1,0 +1,24 @@
+.burger-menu-block{
+    width: 60%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    z-index: 9999;
+    padding: 5vw;
+    transition: 1s;
+}
+
+.burger-link{
+    color: wheat;
+}
+
+.menu-closed{
+    transform: translate(-100%, 0px);
+}
+
+.menu-opened{
+    transform: translate(0px, 0px);
+}
+
+    
+

@@ -1,0 +1,162 @@
+/* styles/tailwind.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url(https://db.onlinewebfonts.com/c/1dc8ecd8056a5ea7aa7de1db42b5b639?family=Gilroy-Regular);
+
+
+@font-face {
+	font-family: 'Angry-Regular';
+	src: url('../app/assets/fonts/fontAngry/fonts/angry-regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('../app/assets/fonts/fontAngry/fonts/angry-regular.svg') format('embedded-opentype'), /* IE < 9 */
+		url('../app/assets/fonts/fontAngry/fonts/angry-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../app/assets/fonts/fontAngry/fonts/angry-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../app/assets/fonts/fontAngry/fonts/angry-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		
+}
+@font-face {
+	font-family: 'Gilroy-Regular';
+	src: url('../app/assets/fonts/fontGilroy/fonts/gilroy-regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('../app/assets/fonts/fontGilroy/fonts/gilroy-regular.svg') format('woff2'), /* Super Modern Browsers */
+		url('../app/assets/fonts/fontGilroy/fonts/gilroy-regular.ttf') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../app/assets/fonts/fontGilroy/fonts/gilroy-regular.woff2') format('truetype'), /* Safari, Android, iOS */
+		url('../app/assets/fonts/fontGilroy/fonts/gilroy-regular.woff') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+  font-family: '2MASS J1808';
+  src: url('../app/assets/fonts/font/2MASSJ1808-Normal.eot');
+  src: local('2MASS J1808 Normal'), local('2MASSJ1808-Normal'),
+      url('./assets/fonts/font/2MASSJ1808-Normal.ttf') format('embedded-opentype'),
+      url('./assets/fonts/font/2MASSJ1808-Normal.woff2') format('woff2'),
+      url('./assets/fonts/font/2MASSJ1808-Normal.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.p2MASS-J1808{
+  font-family: '2MASS J1808';
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box5;
+}
+
+
+header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.fon {
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-size: cover;
+  height: 100%;
+}
+
+.button_box-shadow {
+  box-shadow: 0px 10px 40px 0px rgba(43, 205, 252, 0.50), 0px 8px 0px 0px #098EB7;
+
+}
+
+.drop-shadow {
+  fill: #FFF;
+  filter: drop-shadow(0px 6px 29px rgba(41, 26, 93, 0.15));
+}
+.drop-shadowBlock{
+  fill: #291A5D;
+  box-shadow: 0px -4px 25px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.footer_fon {
+  background-image: url(./assets/images/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+}
+
+.list_disc::before {
+  content: '\2022';
+  /* Unicode character for a bullet point */
+  color: #333;
+  /* Adjust the color as needed */
+  margin-right: 0.5rem;
+  /* Adjust the spacing between the dot and the text */
+  display: inline-block;
+}
+
+select {
+  appearance: none;
+  /* Disable default arrow in some browsers */
+  padding-right: 1.5rem;
+  /* Adjust the padding to make space for the arrow */
+  background-color: #fff;
+  /* Set the background color */
+  border: 0.07rem solid #d1d5db;
+  /* Set the border color */
+  /* background-image: url(./assets/images/Vector\ 7.png); */
+  /* background-repeat: no-repeat;
+    background-position: 120px center; */
+}
+
+html {
+  font-size: 1rem;
+}
+
+@media screen and (max-width:1920px) {
+  html {
+    font-size: calc(-0.0071428571428570065rem + 1.1190476190476188vw);
+  }
+}
+
+@media screen and (max-width:768px) {
+  html {
+    font-size: calc(0.04585798816568054rem + 3.5502958579881656vw);
+  }
+}
+
+@media screen and (max-width:430px) {
+  html {
+    font-size: calc(-0.002331002331002331rem + 3.7296037296037294vw);
+  }
+}
+
+
+.cc {
+  fill: #FFF;
+  filter: drop-shadow(0px 6px 29px rgba(41, 26, 93, 0.15));
+}
+
+/* Style the arrow */
+select::after {
+  content: '▼';
+  /* Unicode character for a downward arrow */
+  color: #6b7280;
+  /* Set the arrow color */
+  position: absolute;
+  top: 50%;
+  right: 0.75rem;
+  /* Adjust the position of the arrow */
+  transform: translateY(-50%);
+  pointer-events: none;
+  /* Make sure the arrow doesn't interfere with clicking on the select */
+}
+
+@media screen and (min-width: 768px) {
+
+  .footer_fon {
+    background-image: url(./assets/images/Group-footer-desk.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+  }
+
+}
