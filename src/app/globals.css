@@ -117,7 +117,7 @@ html {
   }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
   html {
     font-size: calc(0.04585798816568054rem + 3.5502958579881656vw);
   }
